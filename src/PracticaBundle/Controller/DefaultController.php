@@ -66,6 +66,11 @@ class DefaultController extends Controller
     }
 
 
+
+
+    
+
+
            public function formSubtascaAction(Request $request){
        		$subtasca = new subtasca();
 		$form = $this->createForm(SubtascaType::class,$subtasca);

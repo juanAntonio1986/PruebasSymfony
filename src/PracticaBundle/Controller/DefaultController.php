@@ -72,10 +72,25 @@ class DefaultController extends Controller
 		
 		$form->handleRequest($request);
 
+
+      if($form->isValid()){
+        $status = "Formulario válido";
+        $data = array(
+          "nom" => $form->get("nom")->getData(),
+          "descripcion" => $form->get("descripcion")->getData()
+          
+        );
+      }else{
+        $status = null;
+        $data = null;
+      }
+    
+
 	    		
              return $this->render('PracticaBundle:Default:formsubtasca.html.twig',array(
              		  'form' => $form->createView(),
-					
+					         'status' => $status,
+                  'data' => $data
 
 
              	));

@@ -1,4 +1,31 @@
-Formulario Tasca
+Formulario SubTasca
+
+
+{% if (status !=null) and (data !=null)  %}
+
+	<h3>{{status}}</h3>
+	{{dump(data)}}
+
+
+
+
+{% endif %}
+
+
+
 
 {{form_start(form,{'action':'','method':'POST'})}}
+
+
+<label>
+
+Nombre: 
+
+{{form_errors(form.nom)}}
+{{form_widget(form.nom)}}
+
+</label>
+
+
+
 {{form_end(form)}}

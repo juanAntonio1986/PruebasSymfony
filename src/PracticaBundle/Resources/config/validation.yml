@@ -11,4 +11,16 @@ PracticaBundle\Entity\Usuario:
             - NotBlank: {message: "La descripción no puede estar vacia"}
             
 
+
+
+PracticaBundle\Entity\Subtasca:
+    properties:
+        nom:
+            - NotBlank: {message: "El nombre no puede estar vacío"}
+            
+        descripcion:
+            - NotBlank: {message: "La descripción no puede estar vacia"}
+
+        idtasca:
+            - Type:  \Numeric
             

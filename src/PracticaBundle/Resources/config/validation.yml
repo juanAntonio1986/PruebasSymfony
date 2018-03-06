@@ -1,0 +1,14 @@
+PracticaBundle\Entity\Usuario:
+    properties:
+        nom:
+            - NotBlank: {message: "El titulo no puede estar vacío"}
+            - Length:
+                min: 4
+                max: 8
+                minMessage: "El nom debe tener mas de 4 caracteres"
+                maxMessage: "El nom no debe tener mas de 8 caracteres"
+        password:
+            - NotBlank: {message: "La descripción no puede estar vacia"}
+            
+
+            

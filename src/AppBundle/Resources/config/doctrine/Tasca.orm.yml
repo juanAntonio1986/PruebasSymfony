@@ -1,0 +1,34 @@
+AppBundle\Entity\Tasca:
+    type: entity
+    table: tasca
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nom:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+        descripcion:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+        fechaInicio:
+            type: date
+            nullable: false
+            column: fecha_inicio
+        fechaFin:
+            type: date
+            nullable: false
+            column: fecha_fin
+    lifecycleCallbacks: {  }

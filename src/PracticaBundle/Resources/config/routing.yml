@@ -1,0 +1,17 @@
+practica_homepage:
+    path:     /formulariousuario
+    defaults: { _controller: PracticaBundle:Default:formUsuario }
+
+
+
+formulario_tasca:
+    path:     /formulariotasca
+    defaults: { _controller: PracticaBundle:Default:formTasca }
+
+
+
+
+formulario_subtasca:
+    path:     /formulariosubtasca
+    defaults: { _controller: PracticaBundle:Default:formSubtasca }
+

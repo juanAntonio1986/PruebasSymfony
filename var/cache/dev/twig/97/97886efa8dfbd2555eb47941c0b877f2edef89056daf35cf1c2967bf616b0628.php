@@ -15,11 +15,11 @@ class __TwigTemplate_5092c5e9093ecc13ee19a3439935d143b2e4b440a1ce6c355e60ea8249c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6a939575ba2798300ac4cd69a503c47d400473fe37a5aef2e3c884b64a8f7b8e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6a939575ba2798300ac4cd69a503c47d400473fe37a5aef2e3c884b64a8f7b8e->enter($__internal_6a939575ba2798300ac4cd69a503c47d400473fe37a5aef2e3c884b64a8f7b8e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PracticaBundle:Default:formsubtasca.html.twig"));
+        $__internal_3b76aebc8078cca7ff1683b22e03c33adda48c545e9900803096160d541cae45 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_3b76aebc8078cca7ff1683b22e03c33adda48c545e9900803096160d541cae45->enter($__internal_3b76aebc8078cca7ff1683b22e03c33adda48c545e9900803096160d541cae45_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PracticaBundle:Default:formsubtasca.html.twig"));
 
-        $__internal_94929a5ad074ed1333d152e86cec74a55553b67429da66eaa9392b17d2bf7ae1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_94929a5ad074ed1333d152e86cec74a55553b67429da66eaa9392b17d2bf7ae1->enter($__internal_94929a5ad074ed1333d152e86cec74a55553b67429da66eaa9392b17d2bf7ae1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PracticaBundle:Default:formsubtasca.html.twig"));
+        $__internal_d153649bf447fb3172cd2c4deb9cc3824ecbd2d930379b421cac56ab7deaa471 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d153649bf447fb3172cd2c4deb9cc3824ecbd2d930379b421cac56ab7deaa471->enter($__internal_d153649bf447fb3172cd2c4deb9cc3824ecbd2d930379b421cac56ab7deaa471_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PracticaBundle:Default:formsubtasca.html.twig"));
 
         // line 1
         echo "Formulario SubTasca
@@ -76,10 +76,10 @@ Nombre:
         // line 31
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_end');
         
-        $__internal_6a939575ba2798300ac4cd69a503c47d400473fe37a5aef2e3c884b64a8f7b8e->leave($__internal_6a939575ba2798300ac4cd69a503c47d400473fe37a5aef2e3c884b64a8f7b8e_prof);
+        $__internal_3b76aebc8078cca7ff1683b22e03c33adda48c545e9900803096160d541cae45->leave($__internal_3b76aebc8078cca7ff1683b22e03c33adda48c545e9900803096160d541cae45_prof);
 
         
-        $__internal_94929a5ad074ed1333d152e86cec74a55553b67429da66eaa9392b17d2bf7ae1->leave($__internal_94929a5ad074ed1333d152e86cec74a55553b67429da66eaa9392b17d2bf7ae1_prof);
+        $__internal_d153649bf447fb3172cd2c4deb9cc3824ecbd2d930379b421cac56ab7deaa471->leave($__internal_d153649bf447fb3172cd2c4deb9cc3824ecbd2d930379b421cac56ab7deaa471_prof);
 
     }
 

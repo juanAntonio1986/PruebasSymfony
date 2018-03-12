@@ -56,26 +56,41 @@ class DefaultController extends Controller
 		$form = $this->createForm(TascaType::class,$tasca);
 		
 		$form->handleRequest($request);
-    		
+
+    if($form->isValid()){
+        $status = "Formulario válido";
+        $data = array(
+          "nom" => $form->get("nom")->getData(),
+          "descripcion" => $form->get("descripcion")->getData()
+          
+        );
+      }else{
+        $status = null;
+        $data = null;
+      }
+    
+
+          
              return $this->render('PracticaBundle:Default:formtasca.html.twig',array(
-             	'form' => $form->createView()
+                  'form' => $form->createView(),
+                   'status' => $status,
+                  'data' => $data
 
 
-             	));
+              ));
    
     }
+    		
 
 
 
-
-    
 
 
            public function formSubtascaAction(Request $request){
-       		$subtasca = new subtasca();
-		$form = $this->createForm(SubtascaType::class,$subtasca);
-		
-		$form->handleRequest($request);
+          $subtasca = new subtasca();
+    $form = $this->createForm(SubtascaType::class,$subtasca);
+    
+    $form->handleRequest($request);
 
 
       if($form->isValid()){
@@ -91,16 +106,24 @@ class DefaultController extends Controller
       }
     
 
-	    		
+          
              return $this->render('PracticaBundle:Default:formsubtasca.html.twig',array(
-             		  'form' => $form->createView(),
-					         'status' => $status,
+                  'form' => $form->createView(),
+                   'status' => $status,
                   'data' => $data
 
 
-             	));
+              ));
    
     }
+            
+   
+  
+
+
+
+
+    
 
 
 }
